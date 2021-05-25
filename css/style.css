@@ -1,0 +1,257 @@
+/* Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*main style*/
+html, body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+/* Utility classes */
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+.bg-dark {
+    background-color:darksalmon;
+    color:burlywood;
+}
+.bg-light{
+    background-color: antiquewhite;
+    color:darkgoldenrod;
+}
+.bg-primary{
+   background-color:darkkhaki;
+    color:darkgoldenrod;
+}
+
+.text-primary {
+    color:chocolate
+}
+.text-center{
+    text-align:center;
+}
+.l-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.m-heading{
+    font-size: 2rem;
+}
+.lead{
+    font-size: 1.6rem;
+}
+.py-1{
+    padding: 1.5rem 0;
+}
+.p-1{
+    padding: 1.5rem ;
+}
+.btn{
+    background-color:crimson;
+    color:beige;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+.btn-dark{
+    background-color:crimson
+    color:beige;
+}
+.btn:hover {
+    background-color:chocolate;
+}
+.box-shadow{
+    box-shadow: 0 0 2px darksalmon;
+}
+/*section: navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#navbar .logo img{
+    width: 80px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar ul li a{
+    color:beige;
+    padding: 1rem;
+}
+#navbar ul li a:hover {
+    background-color:chocolate;
+    border-radius: 5px;
+}
+/*section: slidecase*/
+#slidecase{
+    background:  url(../img/download.jpg) center top/cover;
+    background-repeat:space;
+    hight: 100vh;
+    color:darkgoldenrod;
+}
+#slidecase. slidecase-content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    height: 100%;
+    padding: 1rem;
+/*overlay*/
+background-color:rgba(0,0,0.0.8);
+}
+/*section:About*/
+#about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#about .about-content div,
+#about .about-content img{
+    flex: 1;
+}
+#about . about-content img{
+    width: 50%;
+    margin-left: 1.5rem;
+    border: 5px solid burlywood;
+}
+/*section:cta*/
+#cta{
+    background: url(../img/mai.jpg) no-repeat center bottom/cover;
+    color:beige;
+}
+#cta.cta-content{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+#cta.cta-content.container p{
+    margin-bottom: 0.5rem;
+}
+/* section:product */
+#product{
+    color:darkgoldenrod;
+}
+#product .boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#product .boxes .box{
+    flex: 1;
+    padding: 1rem;
+}
+#product.boxes .box img{
+    width: 70px;
+    background-color:crimson;
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+/*section:prices*/
+#price .prices-boxes {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#price.prices-boxes .price-box{
+    background-color: antiquewhite;
+    flex:1;
+    border-radius: 5px;
+    margin: 1rem;
+    
+}
+#price.prices-boxes .price-box img{
+    display:block;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+/*section:contact*/
+#contact{
+    display:run-in;
+   justify-content: center;
+}
+ #txtbox1,#txtbox2,#telephone,#location{
+    width:90%;
+    padding: 0.75rem;
+    border: none;
+   margin-right: 0.75rem;
+    margin-bottom: 1rem;
+    outline: none;
+    background-color: antiquewhite;
+    color:darkgoldenrod;
+}
+#orders{
+    width: 99%;
+    padding: 0.75rem;
+    border: none;
+    margin-bottom: 1rem;
+    outline: none;
+    background-color: antiquewhite;
+    color:darkgoldenrod;
+}
+#contact .contact-us .form-group {
+    display:flex;
+}    
+#contact .contact-us .form-group input[type="text"]
+{
+    margin-right: 0.75rem;
+}
+#contact .contact-us .contact-group {
+    display:flex;
+}    
+#contact .contact-us .contact-group input[type="text"]
+{
+    margin-right: 0.75rem;
+}
+.copy{
+    background-color: darksalmon;
+    color:beige;
+}
+.copy ul{
+    display:flex;
+    list-style: none;
+    height: 0.5vh;
+    justify-content: center;
+    align-items: center;
+}
+.copy ul li a{
+    color:beige;
+    margin-right: 10px;
+}
+.copy ul li a:hover {
+    background-color:chocolate;
+    border-radius: 5px;
+}
+.head-color{
+    color:crimson;
+}
+.p-color{
+    color:darksalmon;
+}
+.feedback-box{
+    background-color:antiquewhite;
+    border-radius: 2px;
+    margin: 2rem;
+    box-shadow: 3px 3px 3px 3px darksalmon;
+    padding: 1.5rem ;
+    height: 90vh;
+    width: 80vh  ;
+}
